@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Times New Roman', Georgia, serif;
+ 
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Playfair Display';
+}
+h4{
+  letter-spacing: 3px;
+}
+
+hr{
+  border-top: 1px solid rgb(221, 214, 214);
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.5px;
+  letter-spacing: 2px;   
+  background-color: white;
+  position: fixed;  
+  width: 100%;
+  cursor: pointer;  
+  z-index: 2;  
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+.shadow {
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+.navbar-left{
+  font-size: 15px;
+  line-height: 1.5; 
+}
+.navbar-right{
+  font-size: 15px;
+  line-height: 1.5;  
+  
+}
+.navbar-button{
+  text-decoration: none;
+  color: black;
+  padding: 8px 16px;
+}
+.about-button:hover {
+  background-color: rgb(179,177,177);
+}
+.menu-button:hover {
+  background-color: rgb(179,177,177);
+}
+.contact-buttton:hover {
+  background-color: rgb(179,177,177);
+}
+.navbar-button:hover{
+  background-color: rgb(179,177,177);
+}
+
+.header-image{
+  max-width: 100%;
+  height: auto;
+}
+.header-container{
+  position: relative;
+}
+.header-bottom{
+  position: absolute;
+  bottom: 8px;
+  left: 24px;
+  font-size: 22px;
+  font-weight: 400px; 
+  opacity: 0.4;
+}
+.about-section{
+  display: flex;
+ 
+  margin-bottom: 30px;
+}
+.about-image-container{ 
+  margin-top: 70px;
+  margin-left: 100px;
+}
+.about-section-image{
+  width: 380px;
+  height: 430px;
+  border-radius: 4px;
+  vertical-align: middle;
+  opacity: 0.8;
+  float: left;
+}
+.about-section-content{
+  
+  float: right;
+  
+  height: auto;
+  padding: 50px;
+  margin: 0px;  
+}
+.about-content-heading1{
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 15px;
+  font-weight: 500;
+  letter-spacing: 6px;
+}
+.about-content-heading2{
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;  
+}
+.about-content-par1{
+  font-size: 16px;
+}
+.about-content-par2{
+  font-size: 15px;
+  opacity: 0.75;
+}
+.menu-container{
+  display: flex;
+}
+.menu-content-container{
+ padding-left:125px;
+ padding-top: 60px;
+ float: left;
+
+}
+.menu-image{
+  width: 500px;
+  height: auto;
+  border-radius: 4px;
+  float: right;
+  padding-top: 100px;
+  padding-left: 70px;
+  opacity: 0.8;
+}
+.menu-container-heading{
+  text-align: center;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 6px;
+}
+.menu-subheading-content{
+  font-size: 15px;
+  color: gray;
+}
+.form-contact-container{
+  margin-left: 100px;
+  width: 85%;  
+  padding: 10px;
+  font-size: 18px;
+}
+.form-input{
+  margin-left: 100px;
+  width: 60%;  
+  padding: 10px;
+  font-size: 18px;
+}
+.form-contact-input{
+  padding-top: 16px ;
+  padding-bottom: 16px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 130%;
+}
+.form-contact-button{
+  background-color: white; 
+  border: none;
+  color: rgb(12, 12, 12);
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.form-contact-button:hover{
+  background-color: rgb(189, 189, 189);
+}
+
+@media (max-width:600px){
+  .navbar{
+    display: contents;
+  }
+  .navbar-right{
+    display: none;
+  }
+  .about-section-image{
+    display: block;
+    display: none;
+  }
+  .about-section-content {
+    position: inherit;
+    display: block;
+    width: 100%;
+    padding: 20px;
+  }
+  .about-image-container{
+  display: none;
+  }
+  .menu-container{
+    display: grid;
+  }
+
+  .about-content-heading1{
+    padding-bottom: 0px;
+  }
+  .menu-content-container{
+    padding: 15px;
+    margin: 0px;
+  }
+  .menu-image{
+    width: 100%;
+    margin: auto !important;
+    padding: 0px;
+    float: none;
+    height: auto;
+  }
+  .content-container{
+    max-width: fit-content !important;
+  }
+  .navbar{
+    position: relative;
+  }
+  .header-image{
+    width: auto !important;
+    margin: auto !important;
+    height: auto;
+  }
+  .form-contact-container {
+    margin: 0px;
+    width:auto;
+  }
+  .menu-image-container{
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+ }
+ 
+ @media (min-width<=601px){
+  .content-container{
+    max-width:1100px;
+  }
+
+ }
+ 
